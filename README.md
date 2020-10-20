@@ -15,11 +15,11 @@ useDispatch도 동일하게 작동된다.
 React를 배울때 처럼 흐름을 이해하는 것이 제일 중요하다.
 
 1. index.js에 createStore 선언, Provider 감싸기.
-2. Routes.js에 실제 컨테이너 컴포넌트 연결하기
-3. 컨테이너에는 컴포넌트로 넘어가는 인자값과 액션값을 넘겨준다.
+2. 컨테이너에는 컴포넌트로 넘어가는 인자값과 액션값을 넘겨준다.
    해당 컴포넌트에서 useSelector, useDispatch 사용하여 해당 값을 조회하고, dispatch하도록 설정.
-4. 액션 폴더에 있는 counter는 해당 store의 초기값을 설정해두고,
+3. 액션 폴더에 있는 counter는 해당 store의 초기값을 설정해두고,
    액션 타입설정, 액션생성함수를 만든다.
    그리고 그 아래에 리듀서를 만들어 놓는다.
-5. 액션폴더에 있는 index.js에 combineReducer를 이용하여, 해당 리듀서를 통합하여 루트리듀서로 리턴한다.
+4. 액션폴더에 있는 index.js에 combineReducer를 이용하여, 해당 리듀서를 통합하여 루트리듀서로 리턴한다.
+5. Routes.js에 실제 컨테이너 컴포넌트 연결하기
 6. redux-devtools-extension 설치한 후에 { composeWithDevTools } 스토어에서 호출하여 연결해 둔다.
